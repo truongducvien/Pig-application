@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="pig.css">
+   <title>PIG APPLICATION</title>
+</head>
+<body>
+   
+   <div class="container">
+      <h2>Let's play PIG!</h2>
+      <img src="logo.jpg" alt="">
+      <fieldset>
+          <legend>Rules</legend>
+          <ul>
+              <li>First player to 100 wins</li>
+              <li>Players take turn rolling the die.</li>
+              <li>Turn end when player rolls a 1 or chooses to hold</li>
+              <li>If player rolls a 1, they lose all points earned during the turn</li>
+              <li>If player holds, pointer they earned during the turn are added to their total.</li>
+          </ul>
+      </fieldset>
+      <div class="player-info">
+          <p>
+              Player 1 <input id="player1" type="text"> Score <span class="totalScore1">0</span>
+          </p>
+          <p>
+              Player 2 
+              <input id="player2" type="text"> Score <span class="totalScore2">0</span> 
+              <button class="startGame" onclick="newGame()">New game</button>
+          </p>
+          
+      </div>
+      <span class="turn-info">------------</span>
+
+      <div class="turn-area">
+          <div class="btn">
+              <button class="play">Roll</button>
+              <button class="hold">Hold</button>
+          </div>
+          <div class="turn-score">
+              <p>
+                  Die <span class="currentScore">0</span>
+              </p>
+              <p>
+                  Total <span class="currentTotalScore">0</span>
+              </p>
+          </div>
+      </div>
+  </div>
+
+
+   <script src="pig.js"></script>
+</body>
+</html>

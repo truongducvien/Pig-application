@@ -1,0 +1,63 @@
+.container{
+   position: relative;
+   width: 400px;
+   height: fit-content;
+   padding: 10px;
+   margin: auto;
+   border: 3px solid rgb(46, 46, 255);
+   border-radius: 4px;
+}
+.container img{
+   position: absolute;
+   top: 0px;
+   right: 40px;
+   width: 77px
+}
+.container fieldset{
+   border-radius: 4px;
+}
+h2{
+   color: rgb(46, 46, 255);
+   font-size: 35px;
+   margin: 4px;
+}
+.player-info input{
+   width: 120px;
+   padding: 2px;
+   margin-right: 10px;
+}
+.player-info span{
+   display: inline-block;
+   width: 60px;
+   padding: 2px;
+   border: 1px solid #333;
+}
+.player-info button{
+   margin-left: 10px;
+}
+.turn-info{
+   display: block;
+   color: red;
+   font-size: 15px;
+   font-weight: 700;
+   margin: 10px;
+}
+.turn-area, .turn-score{
+   display: flex;
+   justify-content: space-around;
+}
+.turn-area button{
+   width: 70px;
+   margin: 5px;
+}
+.turn-score p{
+   display:block;
+   width: 90px;
+   margin: 5px;
+}
+.turn-score span{
+   display: inline-block;
+   width: 40px;
+   padding: 2px;
+   border: 1px solid #333;
+}
