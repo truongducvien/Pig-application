@@ -43,6 +43,9 @@ function newGame(){
    //Take the name:
    player1.name = document.getElementById("player1").value;
    player2.name = document.getElementById("player2").value;
+   if(player1.name !="" && player2.name !=""){
+      $("play-area").style.display = "block";
+   }else{alert("Please set all players's name")};
    // Choose the player:
    let playerRandom = Math.floor(Math.random()*2);
    playerRandom == 0? choosePlayer(player1):choosePlayer(player2);
@@ -78,5 +81,6 @@ function holdScore(player){
        $('turn-info').innerHTML = `-------------`;
        document.getElementById("player1").value = "";
        document.getElementById("player2").value = "";
+      $("play-area").style.display = "none";
    }
 }
